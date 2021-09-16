@@ -14,9 +14,7 @@ def main():
     diameter = int(input("Enter diameter of the pizza you would like(inch): "))
 
     # process
-    sub_total = (
-        constants.LABOR + constants.RENT + (diameter * constants.COST_PER_INCH)
-    )
+    sub_total = constants.LABOR + constants.RENT + (diameter * constants.COST_PER_INCH)
     total = sub_total * constants.HST
 
     # output
